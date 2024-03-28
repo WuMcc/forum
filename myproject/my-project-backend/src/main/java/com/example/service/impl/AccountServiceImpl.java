@@ -176,6 +176,11 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         return success ? null : "未知错误，请联系管理员";
     }
 
+    private void deleteEmailVerifyCode(String email) {
+        String key = this.getKey(email);
+        stringRedisTemplate.delete(key);
+    }
+
     public boolean verifyLimit(String ip){
         String key = this.getKey(ip);
         return flowUtils.limitOnceCheck(key, verifyLimit);
