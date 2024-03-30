@@ -11,7 +11,7 @@ import {
   Location, Lock, Message, Monitor,
   Notification, Operation,
   Position,
-  School, Search, Service,
+  School, Search, Service, Tickets,
   Umbrella, User
 } from "@element-plus/icons-vue";
 import LightCard from "@/components/LightCard.vue";
@@ -170,36 +170,48 @@ function deleteAllNotification() {
               <el-sub-menu index="2">
                 <template #title>
                   <el-icon><Position/></el-icon>
-                  <span><b>探索与发现</b></span>
+                  <span><b>实用小工具</b></span>
                 </template>
                 <el-menu-item>
                   <template #title>
                     <el-icon><Document/></el-icon>
-                    成绩查询
+                    <a href="https://www.vkna.cn/" target="_blank" style="text-decoration: none;color: #e5eaf3">放松一下🎮</a>
                   </template>
                 </el-menu-item>
                 <el-menu-item>
                   <template #title>
                     <el-icon><Files/></el-icon>
-                    班级课程表
+                    <a href="https://chat18.aichatos.xyz/#/chat" target="_blank" style="text-decoration: none;color: #e5eaf3">AI聊天💬</a>
                   </template>
                 </el-menu-item>
                 <el-menu-item>
                   <template #title>
                     <el-icon><Monitor/></el-icon>
-                    教务通知
+                    <a href="https://www.processon.com/" target="_blank" style="text-decoration: none;color: #e5eaf3">在线绘图✏️</a>
                   </template>
                 </el-menu-item>
                 <el-menu-item>
                   <template #title>
                     <el-icon><Collection/></el-icon>
-                    在线图书馆
+                    <a href="https://www.nlc.cn/web/index.shtml" target="_blank" style="text-decoration: none;color: #e5eaf3">在线图书馆📖</a>
                   </template>
                 </el-menu-item>
                 <el-menu-item>
                   <template #title>
                     <el-icon><DataLine/></el-icon>
-                    预约教室
+                    <a href="https://fanyi.youdao.com/" target="_blank" style="text-decoration: none;color: #e5eaf3">有道翻译🀄</a>
+                  </template>
+                </el-menu-item>
+                <el-menu-item>
+                  <template #title>
+                    <el-icon><Tickets /></el-icon>
+                    <a href="https://www.mujicv.com/" target="_blank" style="text-decoration: none;color: #e5eaf3">简历模板📄</a>
+                  </template>
+                </el-menu-item>
+                <el-menu-item>
+                  <template #title>
+                    <el-icon><DataLine/></el-icon>
+                    <a href="https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images" target="_blank" style="text-decoration: none;color: #e5eaf3">随机壁纸🌆</a>
                   </template>
                 </el-menu-item>
               </el-sub-menu>

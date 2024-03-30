@@ -2,10 +2,10 @@ package com.example.controller;
 
 import com.example.entity.RestBean;
 import com.example.entity.dto.Interact;
-import com.example.entity.vo.request.AddCommentVo;
-import com.example.entity.vo.request.TopicCreateVo;
-import com.example.entity.vo.request.TopicUpdateVo;
+import com.example.entity.dto.LostComment;
+import com.example.entity.vo.request.*;
 import com.example.entity.vo.response.*;
+import com.example.service.LostService;
 import com.example.service.TopicService;
 import com.example.service.WeatherService;
 import com.example.utils.Const;
@@ -29,6 +29,8 @@ public class ForumController {
     TopicService topicService;
     @Resource
     ControllerUtils utils;
+    @Resource
+    LostService lostService;
 
     @GetMapping("/weather")
     public RestBean<WeatherVo> weather(double longitude, double latitude){
@@ -48,13 +50,6 @@ public class ForumController {
 
     @PostMapping("/create-topic")
     public RestBean<Void> createTopic(@Valid @RequestBody TopicCreateVo vo,
-                                      @RequestAttribute(Const.ATTR_USER_ID)int id){
-        return utils.messageHandle(() -> topicService.createTopic(id, vo));
-
-    }
-
-    @PostMapping("/create-lost")
-    public RestBean<Void> createLost(@Valid @RequestBody TopicCreateVo vo,
                                       @RequestAttribute(Const.ATTR_USER_ID)int id){
         return utils.messageHandle(() -> topicService.createTopic(id, vo));
 
@@ -113,6 +108,50 @@ public class ForumController {
     public RestBean<Void> deleteComment(@RequestParam @Min(0) int id,
                                         @RequestAttribute(Const.ATTR_USER_ID) int uid){
         topicService.deleteComment(id, uid);
+        return RestBean.success();
+    }
+
+    @PostMapping("/create-lost")
+    public RestBean<Void> createTopic(@Valid @RequestBody LostCreateVo vo,
+                                      @RequestAttribute(Const.ATTR_USER_ID)int id){
+        return utils.messageHandle(() -> lostService.createLost(id, vo));
+
+    }
+
+    @GetMapping("/list-lost")
+    public RestBean<List<LostPreviewVo>> listLost(@RequestParam @Min(0) int page){
+        return RestBean.success(lostService.listLostByPage(page + 1));
+    }
+
+
+    @GetMapping("/lost")
+    public RestBean<LostDetailVo> lost(@RequestParam @Min(0) int tid,
+                                         @RequestAttribute(Const.ATTR_USER_ID) int id){
+        return RestBean.success(lostService.getLost(tid, id));
+    }
+
+    @PostMapping("/update-lost")
+    public RestBean<Void> updateLost(@Valid @RequestBody LostUpdateVo vo,
+                                      @RequestAttribute(Const.ATTR_USER_ID) int id){
+        return utils.messageHandle(() -> lostService.updateLost(id, vo));
+    }
+
+    @PostMapping("/add-lost-comment")
+    public RestBean<Void> addLostComment(@Valid @RequestBody AddCommentVo vo,
+                                     @RequestAttribute(Const.ATTR_USER_ID) int id){
+        return utils.messageHandle(() -> lostService.createComment(id, vo));
+    }
+
+    @GetMapping("/lost-comments")
+    public RestBean<List<CommentVo>> LostComments(@RequestParam @Min(0) int tid,
+                                              @RequestParam @Min(0) int page){
+        return RestBean.success(lostService.comments(tid, page + 1));
+    }
+
+    @GetMapping("/delete-lost-comment")
+    public RestBean<Void> deleteLostComment(@RequestParam @Min(0) int id,
+                                        @RequestAttribute(Const.ATTR_USER_ID) int uid){
+        lostService.deleteComment(id, uid);
         return RestBean.success();
     }
 

@@ -26,4 +26,6 @@ public class Const {
     public final static String FORUM_TOPIC_COMMENT_COUNTER = "forum:topic:comment:";
     public final static String FORUM_TOPIC_PREVIEW_CACHE = "topic:preview:";
     public final static String FORUM_LOST_PREVIEW_CACHE = "lost:preview:";
+    public static final String FORUM_LOST_CREATE_COUNTER = "forum:lost:create:";
+    public static final String FORUM_LOST_COMMENT_COUNTER = "forum:lost:comment:";
 }

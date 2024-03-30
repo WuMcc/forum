@@ -55,6 +55,12 @@ const router = createRouter({
                     path: 'lost',
                     name: 'lost',
                     component: () => import('@/views/forum/LostList.vue')
+                },{
+                    path: 'lost-detail/:tid',
+                    name: 'lost-detail',
+                    component: () => import('@/views/forum/LostDetail.vue')
+                },{
+                    path: 'tools/library'
                 }
             ]
         }

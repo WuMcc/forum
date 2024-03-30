@@ -4,7 +4,156 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4200fb2d-eb9e-4560-9fe9-5599b9f72a97" name="更改" comment="准备增加其他功能" />
+    <list default="true" id="4200fb2d-eb9e-4560-9fe9-5599b9f72a97" name="更改" comment="准备增加其他功能">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2024-03-20-spring-0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2024-03-21-spring-0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/controller/ForumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/controller/ForumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/dto/Lost.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/dto/Lost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/utils/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/utils/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/controller/ForumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/controller/ForumController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/entity/dto/Lost.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/entity/dto/Lost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/utils/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/utils/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@element-plus_icons-vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@element-plus_icons-vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@element-plus_icons-vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@element-plus_icons-vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueup_vue-quill.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueup_vue-quill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueup_vue-quill.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueup_vue-quill.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueuse_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueuse_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueuse_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/@vueuse_core.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/axios.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-25GUDUBW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-25GUDUBW.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-37KWOD6K.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-37KWOD6K.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-5FNHRHU4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-5FNHRHU4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-5K45VCEP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-5K45VCEP.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-F2TB2LHU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-F2TB2LHU.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-GABJPDWE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-GABJPDWE.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-GH4QQV66.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-GH4QQV66.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-ISEJFESM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-ISEJFESM.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-JXGTQJPY.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-JXGTQJPY.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-PBJIO4MK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-PBJIO4MK.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-PJPMQPGS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-PJPMQPGS.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-SXVOEK6A.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-SXVOEK6A.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-VNXLIMAL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-VNXLIMAL.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-XYV3HAXE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-XYV3HAXE.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-ZS7NZCD4.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-ZS7NZCD4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-ZS7NZCD4.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/chunk-ZS7NZCD4.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_aside_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_aside_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_aside_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_aside_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_avatar_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_avatar_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_avatar_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_avatar_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_backtop_style_css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_backtop_style_css.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_badge_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_badge_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_badge_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_badge_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_base_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_base_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_base_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_base_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_button_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_button_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_button_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_button_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_checkbox_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_checkbox_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_checkbox_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_checkbox_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_col_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_col_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_col_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_col_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_container_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_container_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_container_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_container_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_divider_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_divider_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_divider_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_divider_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_drawer_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_drawer_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_drawer_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_drawer_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown-item_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown-item_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown-item_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown-item_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_empty_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_empty_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_empty_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_empty_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form-item_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form-item_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form-item_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form-item_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_form_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_header_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_header_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_header_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_header_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_icon_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_icon_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_icon_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_icon_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_image_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_image_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_image_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_image_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_infinite-scroll_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_infinite-scroll_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_infinite-scroll_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_infinite-scroll_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_input_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_input_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_input_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_input_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_link_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_link_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_link_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_link_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_loading_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_loading_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_loading_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_loading_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_main_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_main_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_main_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_main_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu-item_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu-item_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu-item_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu-item_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_menu_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_message_style_css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_message_style_css.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_option_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_option_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_option_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_option_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_pagination_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_pagination_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_pagination_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_pagination_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_popover_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_popover_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_popover_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_popover_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio-group_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio-group_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio-group_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio-group_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_radio_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_row_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_row_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_row_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_row_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_scrollbar_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_scrollbar_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_scrollbar_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_scrollbar_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_select_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_select_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_select_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_select_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_sub-menu_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_sub-menu_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_sub-menu_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_sub-menu_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_tag_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_tag_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_tag_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_tag_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_upload_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_upload_style_css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_upload_style_css.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_upload_style_css.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/pinia.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/pinia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/pinia.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/pinia.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-delta-to-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-delta-to-html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-delta-to-html.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-delta-to-html.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-resize-vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-resize-vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-resize-vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-resize-vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-super-solution-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-super-solution-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-super-solution-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/quill-image-super-solution-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue-router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue-router.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/IndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/IndexView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LostList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LostList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/forum/TopicList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/TopicList.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +164,9 @@
       <list>
         <option value="Record" />
         <option value="JavaScript File" />
+        <option value="Class" />
         <option value="Interface" />
         <option value="Vue Composition API Component" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -27,15 +176,15 @@
         <entry key="$PROJECT_DIR$/my-project-backend" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "WuMcc"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WuMcc&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -75,10 +224,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/idea/project/myproject&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/forum/myproject/my-project-frontend/src/components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -107,6 +256,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\src\components" />
       <recent name="C:\idea\项目\myproject\my-project-frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -197,6 +347,11 @@
       <workItem from="1711613591436" duration="8000" />
       <workItem from="1711635974406" duration="1717000" />
       <workItem from="1711637710983" duration="3078000" />
+      <workItem from="1711642988208" duration="744000" />
+      <workItem from="1711643812703" duration="159000" />
+      <workItem from="1711698243930" duration="12796000" />
+      <workItem from="1711720618661" duration="80000" />
+      <workItem from="1711761828570" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="初始化和Security基本配置">
       <option name="closed" value="true" />
@@ -293,6 +448,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/my-project-backend" />
+    </ignored-roots>
     <MESSAGE value="初始化和Security基本配置" />
     <MESSAGE value="准备增加其他功能" />
     <option name="LAST_COMMIT_MESSAGE" value="准备增加其他功能" />

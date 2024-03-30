@@ -5,29 +5,27 @@ import {
   Clock,
   CollectionTag,
   Compass,
-  Discount,
   Document,
   Edit,
   EditPen,
   Picture,
-  Link, Microphone, CircleCheck, Star, ArrowRightBold, FolderOpened
+  Link, Microphone, Star, ArrowRightBold, FolderOpened
 } from "@element-plus/icons-vue";
 import Weather from "@/components/Weather.vue";
 import {computed, reactive, ref, watch} from "vue";
 import {ElMessage} from "element-plus";
 import {get} from "@/net/index.js";
-import TopicEditor from "@/components/TopicEditor.vue";
+import LostEditor from "@/components/LostEditor.vue";
 import axios from "axios";
 import {useStore} from "@/store/index.js";
-import ColorDot from "@/components/ColorDot.vue";
 import router from "@/router/index.js";
-import TopicTag from "@/components/TopicTag.vue";
 import TopicCollectList from "@/components/TopicCollectList.vue";
+import TopicTag from "@/components/TopicTag.vue";
 
 let ipAddress = ref(null)
 const sentence = reactive({
-  hitokoto: {},
-  from: {},
+  content: {},
+  origin: {},
 })
 const store = useStore()
 
@@ -40,15 +38,16 @@ axios.get(`https://api.ipify.org?format=json`)
       console.log(error);
     });
 
-axios.get('https://tenapi.cn/v2/yiyan?format=json')
+axios.get('https://api.xygeng.cn/one')
     .then(response => {
-      sentence.hitokoto = response.data.data.hitokoto;
-      sentence.from = response.data.data.source
+      sentence.content = response.data.data.content;
+      sentence.origin = response.data.data.origin
       console.log(sentence);
     })
     .catch(error => {
       console.log(error);
     });
+const collects = ref(false)
 
 const weather = reactive({
   location: {},
@@ -57,41 +56,36 @@ const weather = reactive({
   success: false
 })
 const editor = ref(false)
-const topics = reactive({
+const losts = reactive({
   list: [],
-  type: 0,
   page: 0,
   end: false,
-  top: []
 })
-const collects = ref(false)
-
-watch(() => topics.type, () => resetList(), {immediate: true})
+watch(() => losts.type, () => resetList(), {immediate: true})
 const today = computed(() => {
   const date = new Date()
   return `${date.getFullYear()} 年 ${date.getMonth() + 1} 月 ${date.getDate()} 日`
 })
 
-get('/api/forum/top-topic', data => topics.top = data)
 function updateList(){
-  if(topics.end) return
-  get(`/api/forum/list-topic?page=${topics.page}&type=${topics.type}`, data => {
+  if(losts.end) return
+  get(`/api/forum/list-lost?page=${losts.page}&type=${losts.type}`, data => {
     if(data) {
-      data.forEach(d => topics.list.push(d))
-      topics.page++
+      data.forEach(d => losts.list.push(d))
+      losts.page++
     }
     if (data.length < 10 || !data)
-      topics.end = true
+      losts.end = true
   })
 }
-function  onTopicCreate(){
+function  onLostCreate(){
   editor.value = false
   resetList()
 }
 function resetList(){
-  topics.page = 0
-  topics.end = false
-  topics.list = []
+  losts.page = 0
+  losts.end = false
+  losts.list = []
   updateList()
 }
 navigator.geolocation.getCurrentPosition(position => {
@@ -130,18 +124,11 @@ navigator.geolocation.getCurrentPosition(position => {
           <el-icon><Microphone/></el-icon>
         </div>
       </light-card>
-      <light-card style="margin-top: 10px;display: flex;flex-direction: column;gap: 10px">
-        <div v-for="item in topics.top" class="top-topic" @click="router.push(`/index/topic-detail/${item.id}`)">
-          <el-tag type="info" size="small">置顶</el-tag>
-          <div>{{item.title}}</div>
-          <div>{{new Date(item.time).toLocaleDateString()}}</div>
-        </div>
-      </light-card>
       <transition name="el-fade-in" mode="out-in">
-        <div v-if="topics.list.length">
+        <div v-if="losts.list.length">
           <div style="margin-top: 10px;display: flex;flex-direction: column;gap: 10px"
                v-infinite-scroll="updateList">
-            <light-card style="height: 150px" v-for="item in topics.list" class="topic-card" @click="router.push('/index/topic-detail/'+item.id)">
+            <light-card style="height: 150px" v-for="item in losts.list" class="topic-card" @click="router.push('/index/lost-detail/'+item.id)">
               <div style="display: flex">
                 <div>
                   <el-avatar :size="30" :src="store.avatarUserUrl(item.avatar, item.email)"/>
@@ -157,7 +144,6 @@ navigator.geolocation.getCurrentPosition(position => {
                 </div>
               </div>
               <div style="margin-top: 5px">
-                <topic-tag :type="item.type"/>
                 <span style="font-weight: bold;margin-left: 7px">{{item.title}}</span>
               </div>
               <div class="topic-content">{{item.text}}</div>
@@ -212,13 +198,13 @@ navigator.geolocation.getCurrentPosition(position => {
           </div>
           <el-divider style="margin: 5px 0"/>
           <div style="display: flex;flex-direction: column;margin-top: 10px" class="sentence">
-            <div>{{sentence.hitokoto}}</div>
-            <div>from: {{sentence.from}}</div>
+            <div>{{sentence.content}}</div>
+            <div>from: {{sentence.origin}}</div>
           </div>
         </light-card>
       </div>
     </div>
-    <topic-editor :show="editor" @success="onTopicCreate" @close="editor = false"/>
+    <lost-editor :show="editor" @success="onLostCreate" @close="editor = false"/>
     <topic-collect-list :show="collects" @close="collects = false"/>
   </div>
 </template>
@@ -270,7 +256,7 @@ navigator.geolocation.getCurrentPosition(position => {
     cursor: pointer;
   }
   .topic-content{
-    font-size: 13px;
+    font-size: 15px;
     color: grey;
     margin: 5px 0;
     display: -webkit-box;
@@ -306,6 +292,11 @@ navigator.geolocation.getCurrentPosition(position => {
     font-size: 13px;
     opacity: 0.8;
     transition: color .3s;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 
   div:nth-of-type(2){

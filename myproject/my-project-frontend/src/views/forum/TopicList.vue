@@ -26,8 +26,8 @@ import TopicCollectList from "@/components/TopicCollectList.vue";
 
 let ipAddress = ref(null)
 const sentence = reactive({
-  hitokoto: {},
-  from: {},
+  content: {},
+  origin: {},
 })
 const store = useStore()
 
@@ -40,10 +40,10 @@ axios.get(`https://api.ipify.org?format=json`)
       console.log(error);
     });
 
-axios.get('https://tenapi.cn/v2/yiyan?format=json')
+axios.get('https://api.xygeng.cn/one')
     .then(response => {
-      sentence.hitokoto = response.data.data.hitokoto;
-      sentence.from = response.data.data.source
+      sentence.content = response.data.data.content;
+      sentence.origin = response.data.data.origin
       console.log(sentence);
     })
     .catch(error => {
@@ -200,7 +200,7 @@ navigator.geolocation.getCurrentPosition(position => {
         </div>
         <el-divider style="margin: 10px 0"/>
         <div style="font-size: 14px;margin: 10px;color: grey">
-          新华社北京3月5日电 第十四届全国人民代表大会第二次会议5日上午在北京人民大会堂开幕。近3000名全国人大代表肩负人民重托出席大会，履行宪法和法律赋予的神圣职责。
+          新华社北京3月5日电 第十四届全国人民代表大会第二次会议5日上午在北京人民大会堂开幕。
         </div>
         </light-card>
         <light-card style="margin-top: 10px">
@@ -228,8 +228,8 @@ navigator.geolocation.getCurrentPosition(position => {
           </div>
           <el-divider style="margin: 5px 0"/>
           <div style="display: flex;flex-direction: column;margin-top: 10px" class="sentence">
-            <div>{{sentence.hitokoto}}</div>
-            <div>from: {{sentence.from}}</div>
+            <div>{{sentence.content}}</div>
+            <div>from: {{sentence.origin}}</div>
           </div>
         </light-card>
       </div>
@@ -337,6 +337,11 @@ navigator.geolocation.getCurrentPosition(position => {
     font-size: 13px;
     opacity: 0.8;
     transition: color .3s;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 
   div:nth-of-type(2){

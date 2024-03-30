@@ -14,7 +14,6 @@ public class Lost {
     Integer id;
     String title;
     String content;
-    Integer type;
     Date time;
     Integer uid;
 }

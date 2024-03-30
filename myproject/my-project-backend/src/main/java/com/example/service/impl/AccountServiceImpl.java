@@ -124,6 +124,10 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
             return "内部错误，请联系管理员！";
         }
     }
+    private void deleteEmailVerifyCode(String email) {
+        String key = this.getKey(email);
+        stringRedisTemplate.delete(key);
+    }
 
     @Override
     public String resetConfirm(ConfirmResetVo vo) {
