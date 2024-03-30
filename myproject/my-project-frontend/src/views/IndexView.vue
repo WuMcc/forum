@@ -57,17 +57,9 @@ function deleteAllNotification() {
       <el-header class="main-content-header">
         <el-image class="logo" src="https://image.itbaima.cn/images/597/image-20240330175124276.png"/>
         <div style="flex: 1;padding: 0 20px;text-align: center">
-          <el-input v-model="searchInput.text" style="width: 100%;max-width: 500px" placeholder="搜索论坛相关内容..." @keyup.enter.native="search()">
+          <el-input v-model="searchInput.text" style="width: 100%;max-width: 500px" placeholder="百度一下...🔍" @keyup.enter.native="search(`https://www.baidu.com/s?wd=${searchInput.text}`)">
             <template #prefix>
               <el-icon><Search/></el-icon>
-            </template>
-            <template #append>
-              <el-select style="width: 120px" v-model="searchInput.type">
-                <el-option value="1" label="全  部"/>
-                <el-option value="2" label="失物招领"/>
-                <el-option value="3" label="表白墙"/>
-                <el-option value="4" label="帖子广场"/>
-              </el-select>
             </template>
           </el-input>
         </div>

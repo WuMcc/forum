@@ -5,51 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4200fb2d-eb9e-4560-9fe9-5599b9f72a97" name="更改" comment="增加了失物招领页面，和实用工具跳转链接">
-      <change afterPath="$PROJECT_DIR$/log/2024-03-30-spring-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/dto/Love.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/dto/LoveComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/vo/request/LoveCreateVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/vo/request/LoveUpdateVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/vo/response/LoveDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/entity/vo/response/LovePreviewVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/mapper/LoveCommentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/mapper/LoveMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/LoveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/impl/LoveServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Love/LoveCommentEditor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Love/LoveEditor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LoveDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LoveList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/ad.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2024-03-22-spring-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/controller/ForumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/controller/ForumController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/impl/LostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/service/impl/LostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/utils/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/src/main/java/com/example/utils/Const.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/controller/ForumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/controller/ForumController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/LostServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/LostServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/utils/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/utils/Const.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_dropdown_style_css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_pagination_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_pagination_style_css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_select_style_css.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/node_modules/.vite/deps/element-plus_es_components_select_style_css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/components/LostCommentEditor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Lost/LostCommentEditor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/components/LostEditor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Lost/LostEditor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/components/TopicCollectList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Topic/TopicCollectList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/components/TopicCommentEditor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Topic/TopicCommentEditor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/components/TopicEditor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Topic/TopicEditor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/components/TopicTag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/components/Topic/TopicTag.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2024-03-30-spring-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/2024-03-30-spring-0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/IndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/IndexView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LostDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LostDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LostList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/LostList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/forum/TopicDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/TopicDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/forum/TopicList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/forum/TopicList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/welcome/ForgetPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/welcome/ForgetPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/WelcomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/WelcomeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +211,7 @@
       <workItem from="1711643812703" duration="159000" />
       <workItem from="1711698243930" duration="12796000" />
       <workItem from="1711720618661" duration="80000" />
-      <workItem from="1711761828570" duration="19223000" />
+      <workItem from="1711761828570" duration="23669000" />
     </task>
     <task id="LOCAL-00001" summary="初始化和Security基本配置">
       <option name="closed" value="true" />
@@ -318,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711762044467</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="增加了失物招领页面，和实用工具跳转链接">
+      <option name="closed" value="true" />
+      <created>1711793328953</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711793328953</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +338,7 @@
     </ignored-roots>
     <MESSAGE value="初始化和Security基本配置" />
     <MESSAGE value="准备增加其他功能" />
+    <MESSAGE value="添加了live2D小人，完善其他功能 1.0" />
     <MESSAGE value="增加了失物招领页面，和实用工具跳转链接" />
     <option name="LAST_COMMIT_MESSAGE" value="增加了失物招领页面，和实用工具跳转链接" />
   </component>

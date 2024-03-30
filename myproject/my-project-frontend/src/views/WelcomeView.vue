@@ -1,13 +1,13 @@
 <template>
   <div style="width: 100vw;height: 100vh;overflow: hidden;display: flex">
     <div style="flex: 1">
-      <el-image style="width: 100%;height: 100%" fit="cover"
-                src="https://img1.baidu.com/it/u=4097856652,4033702227&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800"/>
+      <el-image style="width: 100%;height: 800px" fit="cover"
+                src="https://image.itbaima.cn/images/597/image-20240330226132830.jpeg"/>
     </div>
     <div class="welcome-title">
-      <div style="font-size: 30px;font-weight: bold">欢迎来到我们的学习平台</div>
-      <div style="margin-top: 10px">在这里你可以学习如何使用Java，如何搭建网站，并且与Java之父密切交流。</div>
-      <div style="margin-top: 5px">在这里你可以同性交友，因为都是男的，没有学Java的女生。</div>
+      <div style="font-size: 30px;font-weight: bold">欢迎来到校园论坛</div>
+      <div style="margin-top: 10px">在这里你可以发布💬日常闲谈，经验分享，恋爱官宣......</div>
+      <div style="margin-top: 5px">吃🍉一线，避⚡秘籍，匿名表白💕应有尽有😊</div>
     </div>
     <div class="right-card">
       <router-view v-slot="{ Component }">
