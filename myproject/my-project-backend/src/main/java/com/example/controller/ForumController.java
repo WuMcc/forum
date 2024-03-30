@@ -2,10 +2,10 @@ package com.example.controller;
 
 import com.example.entity.RestBean;
 import com.example.entity.dto.Interact;
-import com.example.entity.dto.LostComment;
 import com.example.entity.vo.request.*;
 import com.example.entity.vo.response.*;
 import com.example.service.LostService;
+import com.example.service.LoveService;
 import com.example.service.TopicService;
 import com.example.service.WeatherService;
 import com.example.utils.Const;
@@ -31,6 +31,8 @@ public class ForumController {
     ControllerUtils utils;
     @Resource
     LostService lostService;
+    @Resource
+    LoveService loveService;
 
     @GetMapping("/weather")
     public RestBean<WeatherVo> weather(double longitude, double latitude){
@@ -112,7 +114,7 @@ public class ForumController {
     }
 
     @PostMapping("/create-lost")
-    public RestBean<Void> createTopic(@Valid @RequestBody LostCreateVo vo,
+    public RestBean<Void> createLost(@Valid @RequestBody LostCreateVo vo,
                                       @RequestAttribute(Const.ATTR_USER_ID)int id){
         return utils.messageHandle(() -> lostService.createLost(id, vo));
 
@@ -154,6 +156,51 @@ public class ForumController {
         lostService.deleteComment(id, uid);
         return RestBean.success();
     }
+
+    @PostMapping("/create-love")
+    public RestBean<Void> createLove(@Valid @RequestBody LoveCreateVo vo,
+                                      @RequestAttribute(Const.ATTR_USER_ID)int id){
+        return utils.messageHandle(() -> loveService.createLove(id, vo));
+
+    }
+
+    @GetMapping("/list-love")
+    public RestBean<List<LovePreviewVo>> listLove(@RequestParam @Min(0) int page){
+        return RestBean.success(loveService.listLoveByPage(page + 1));
+    }
+
+
+    @GetMapping("/love")
+    public RestBean<LoveDetailVo> love(@RequestParam @Min(0) int tid,
+                                       @RequestAttribute(Const.ATTR_USER_ID) int id){
+        return RestBean.success(loveService.getLove(tid, id));
+    }
+
+    @PostMapping("/update-love")
+    public RestBean<Void> updateLove(@Valid @RequestBody LoveUpdateVo vo,
+                                     @RequestAttribute(Const.ATTR_USER_ID) int id){
+        return utils.messageHandle(() -> loveService.updateLove(id, vo));
+    }
+
+    @PostMapping("/add-love-comment")
+    public RestBean<Void> addLoveComment(@Valid @RequestBody AddCommentVo vo,
+                                         @RequestAttribute(Const.ATTR_USER_ID) int id){
+        return utils.messageHandle(() -> loveService.createComment(id, vo));
+    }
+
+    @GetMapping("/love-comments")
+    public RestBean<List<CommentVo>> LoveComments(@RequestParam @Min(0) int tid,
+                                                  @RequestParam @Min(0) int page){
+        return RestBean.success(loveService.comments(tid, page + 1));
+    }
+
+    @GetMapping("/delete-love-comment")
+    public RestBean<Void> deleteLoveComment(@RequestParam @Min(0) int id,
+                                            @RequestAttribute(Const.ATTR_USER_ID) int uid){
+        loveService.deleteComment(id, uid);
+        return RestBean.success();
+    }
+
 
 
 }

@@ -4,13 +4,14 @@ import router from "@/router";
 import {useStore} from "@/store/index.js";
 import {reactive, ref} from "vue";
 import {
+  ArrowDown,
   Back,
   Bell,
   ChatDotSquare, Check, Collection, DataLine,
   Document, Files,
   Location, Lock, Message, Monitor,
   Notification, Operation,
-  Position,
+  Position, Reading,
   School, Search, Service, Tickets,
   Umbrella, User
 } from "@element-plus/icons-vue";
@@ -42,8 +43,8 @@ function confirmNotification(id, url) {
   })
 }
 
-function search() {
-
+function search(url) {
+  window.open(url, "_blank")
 }
 function deleteAllNotification() {
   get(`/api/notification/delete-all`, loadNotification)
@@ -54,7 +55,7 @@ function deleteAllNotification() {
   <div class="main-content" v-loading="loading" element-loading-text="正在进入，请稍后...">
     <el-container style="height: 100%">
       <el-header class="main-content-header">
-        <el-image class="logo" src="https://ollama.com/public/ollama.png"/>
+        <el-image class="logo" src="https://image.itbaima.cn/images/597/image-20240330175124276.png"/>
         <div style="flex: 1;padding: 0 20px;text-align: center">
           <el-input v-model="searchInput.text" style="width: 100%;max-width: 500px" placeholder="搜索论坛相关内容..." @keyup.enter.native="search()">
             <template #prefix>
@@ -62,10 +63,10 @@ function deleteAllNotification() {
             </template>
             <template #append>
               <el-select style="width: 120px" v-model="searchInput.type">
-                <el-option value="1" label="帖子广场"/>
-                <el-option value="2" label="校园活动"/>
+                <el-option value="1" label="全  部"/>
+                <el-option value="2" label="失物招领"/>
                 <el-option value="3" label="表白墙"/>
-                <el-option value="4" label="教务通知"/>
+                <el-option value="4" label="帖子广场"/>
               </el-select>
             </template>
           </el-input>
@@ -106,13 +107,13 @@ function deleteAllNotification() {
           <el-dropdown>
             <el-avatar :src="store.avatarUrl"/>
             <template #dropdown>
-              <el-dropdown-item>
+              <el-dropdown-item @click="router.push('/index/user-setting')">
                 <el-icon><Operation/></el-icon>
-                个人设置
+                个人信息
               </el-dropdown-item>
-              <el-dropdown-item>
+              <el-dropdown-item @click="router.push('/index/privacy-setting')">
                 <el-icon><Message/></el-icon>
-                消息列表
+                隐私设置
               </el-dropdown-item>
               <el-dropdown-item @click="userLogout" divided>
                 <el-icon><Back/></el-icon>
@@ -147,19 +148,13 @@ function deleteAllNotification() {
                     失物招领
                   </template>
                 </el-menu-item>
-                <el-menu-item>
-                  <template #title>
-                    <el-icon><Notification/></el-icon>
-                    校园活动
-                  </template>
-                </el-menu-item>
-                <el-menu-item>
+                <el-menu-item index="/index/love">
                   <template #title>
                     <el-icon><Umbrella/></el-icon>
                     表白墙
                   </template>
                 </el-menu-item>
-                <el-menu-item>
+                <el-menu-item index="/index/ad">
                   <template #title>
                     <el-icon><School/></el-icon>
                     梦格考研
@@ -172,46 +167,58 @@ function deleteAllNotification() {
                   <el-icon><Position/></el-icon>
                   <span><b>实用小工具</b></span>
                 </template>
-                <el-menu-item>
+                <el-menu-item @click="search(`https://www.vkna.cn/`)">
                   <template #title>
                     <el-icon><Document/></el-icon>
-                    <a href="https://www.vkna.cn/" target="_blank" style="text-decoration: none;color: #e5eaf3">放松一下🎮</a>
+                    <div>放松一下🎮</div>
                   </template>
                 </el-menu-item>
-                <el-menu-item>
+                <el-menu-item @click="search(`https://chat18.aichatos.xyz/#/chat`)">
                   <template #title>
                     <el-icon><Files/></el-icon>
-                    <a href="https://chat18.aichatos.xyz/#/chat" target="_blank" style="text-decoration: none;color: #e5eaf3">AI聊天💬</a>
+                    <div>AI聊天💬</div>
                   </template>
                 </el-menu-item>
-                <el-menu-item>
+                <el-menu-item @click="search(`https://www.processon.com/`)">
                   <template #title>
                     <el-icon><Monitor/></el-icon>
-                    <a href="https://www.processon.com/" target="_blank" style="text-decoration: none;color: #e5eaf3">在线绘图✏️</a>
+                    <div>在线绘图✏️</div>
                   </template>
                 </el-menu-item>
-                <el-menu-item>
+                <el-menu-item @click="search(`https://www.nlc.cn/web/index.shtml`)">
                   <template #title>
                     <el-icon><Collection/></el-icon>
-                    <a href="https://www.nlc.cn/web/index.shtml" target="_blank" style="text-decoration: none;color: #e5eaf3">在线图书馆📖</a>
+                    <div>在线图书馆📖</div>
                   </template>
                 </el-menu-item>
-                <el-menu-item>
+                <el-menu-item @click="search(`https://fanyi.youdao.com/`)">
                   <template #title>
                     <el-icon><DataLine/></el-icon>
-                    <a href="https://fanyi.youdao.com/" target="_blank" style="text-decoration: none;color: #e5eaf3">有道翻译🀄</a>
+                    <div>有道翻译🀄</div>
                   </template>
                 </el-menu-item>
-                <el-menu-item>
+                <el-menu-item @click="search(`https://www.mujicv.com/`)">
                   <template #title>
                     <el-icon><Tickets /></el-icon>
-                    <a href="https://www.mujicv.com/" target="_blank" style="text-decoration: none;color: #e5eaf3">简历模板📄</a>
+                    <div>简历模板📄</div>
                   </template>
                 </el-menu-item>
-                <el-menu-item>
+                <el-menu-item @click="search(`https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images`)">
                   <template #title>
                     <el-icon><DataLine/></el-icon>
-                    <a href="https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images" target="_blank" style="text-decoration: none;color: #e5eaf3">随机壁纸🌆</a>
+                    <div>随机壁纸🌆</div>
+                  </template>
+                </el-menu-item>
+                <el-menu-item @click="search(`https://www.tingroom.com/`)">
+                  <template #title>
+                    <el-icon><Reading/></el-icon>
+                    <div>在线听力室🎧</div>
+                  </template>
+                </el-menu-item>
+                <el-menu-item @click="search(`https://www.duolingo.cn/`)">
+                  <template #title>
+                    <el-icon><Reading/></el-icon>
+                    <div>外语学习🥸</div>
                   </template>
                 </el-menu-item>
               </el-sub-menu>
@@ -297,7 +304,7 @@ function deleteAllNotification() {
   box-sizing: border-box;
 }
 .logo{
-  height: 45px;
+  height: 130px;
 }
 .user-info{
   display: flex;

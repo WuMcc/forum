@@ -18,12 +18,12 @@ import {
 import { QuillDeltaToHtmlConverter } from 'quill-delta-to-html';
 import Card from "@/components/Card.vue";
 import router from "@/router";
-import TopicTag from "@/components/TopicTag.vue";
+import TopicTag from "@/components/Topic/TopicTag.vue";
 import InteractButton from "@/components/InteractButton.vue";
 import {ElMessage} from "element-plus";
 import {useStore} from "@/store";
-import TopicEditor from "@/components/TopicEditor.vue";
-import TopicCommentEditor from "@/components/TopicCommentEditor.vue";
+import TopicEditor from "@/components/Topic/TopicEditor.vue";
+import TopicCommentEditor from "@/components/Topic/TopicCommentEditor.vue";
 
 const route = useRoute()
 const store = useStore()

@@ -43,6 +43,10 @@
         <div style="margin-top: 70px">
           <el-button @click="confirmReset()" style="width: 270px;" type="danger" plain>开始重置密码</el-button>
         </div>
+        <div style="margin-top: 20px">
+          <span style="font-size: 14px;line-height: 15px;color: grey">记得密码? </span>
+          <el-link type="primary" style="translate: 0 -2px" @click="router.push('/')">返回登陆</el-link>
+        </div>
       </div>
     </transition>
     <transition name="el-fade-in-linear" mode="out-in">
@@ -72,6 +76,7 @@
         <div style="margin-top: 70px">
           <el-button @click="doReset()" style="width: 270px;" type="danger" plain>立即重置密码</el-button>
         </div>
+
       </div>
     </transition>
   </div>

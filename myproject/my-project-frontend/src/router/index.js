@@ -60,7 +60,17 @@ const router = createRouter({
                     name: 'lost-detail',
                     component: () => import('@/views/forum/LostDetail.vue')
                 },{
-                    path: 'tools/library'
+                    path: 'love',
+                    name: 'love',
+                    component: () => import('@/views/forum/LoveList.vue')
+                },{
+                    path: 'love-detail/:tid',
+                    name: 'love-detail',
+                    component: () => import('@/views/forum/LoveDetail.vue')
+                },{
+                    path: 'ad',
+                    name: 'ad',
+                    component: () => import('@/views/forum/ad.vue')
                 }
             ]
         }

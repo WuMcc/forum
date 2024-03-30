@@ -16,13 +16,13 @@ import Weather from "@/components/Weather.vue";
 import {computed, reactive, ref, watch} from "vue";
 import {ElMessage} from "element-plus";
 import {get} from "@/net/index.js";
-import TopicEditor from "@/components/TopicEditor.vue";
+import TopicEditor from "@/components/Topic/TopicEditor.vue";
 import axios from "axios";
 import {useStore} from "@/store/index.js";
 import ColorDot from "@/components/ColorDot.vue";
 import router from "@/router/index.js";
-import TopicTag from "@/components/TopicTag.vue";
-import TopicCollectList from "@/components/TopicCollectList.vue";
+import TopicTag from "@/components/Topic/TopicTag.vue";
+import TopicCollectList from "@/components/Topic/TopicCollectList.vue";
 
 let ipAddress = ref(null)
 const sentence = reactive({
@@ -224,7 +224,7 @@ navigator.geolocation.getCurrentPosition(position => {
         <light-card style="margin-top: 10px">
           <div style="font-size: 14px;margin-top: 2px;font-weight: bold">
             <el-icon><Link/></el-icon>
-            一则短语❤
+            一则短语💕
           </div>
           <el-divider style="margin: 5px 0"/>
           <div style="display: flex;flex-direction: column;margin-top: 10px" class="sentence">
