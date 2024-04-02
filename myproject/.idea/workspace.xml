@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4200fb2d-eb9e-4560-9fe9-5599b9f72a97" name="更改" comment="增加了失物招领页面，和实用工具跳转链接">
+    <list default="true" id="4200fb2d-eb9e-4560-9fe9-5599b9f72a97" name="更改" comment="完结1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2024-03-23-spring-0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2024-03-24-spring-0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/2024-03-30-spring-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/2024-03-30-spring-0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/IndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/IndexView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/config/MinioConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/config/MinioConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/listener/MailQueueListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/listener/MailQueueListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-backend/target/classes/com/example/service/impl/WeatherServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-project-frontend/src/views/WelcomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-frontend/src/views/WelcomeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +28,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Vue Composition API Component" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -69,63 +75,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "zulu-17",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/forum/myproject/my-project-frontend/src/components/Love",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43218392",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "80c6b4d10458cd7c10aaf1f192f55c13",
-    "ts.external.directory.path": "C:\\idea\\IntelliJ IDEA 2023.2.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/forum/myproject/my-project-frontend/dist/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43218392&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;80c6b4d10458cd7c10aaf1f192f55c13&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\idea\\IntelliJ IDEA 2023.2.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\dist\assets" />
       <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\src\components\Love" />
       <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\src\components" />
       <recent name="C:\idea\项目\myproject\my-project-frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\conf" />
       <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\public" />
       <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\src\static" />
       <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\src\components\Topic" />
       <recent name="C:\Users\Administrator\Desktop\forum\myproject\my-project-frontend\src\components\Lost" />
-      <recent name="C:\idea\项目\myproject\my-project-frontend" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.service" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -DskipTests package" />
+      <command value="mvn package" />
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.MyProjectBackendApplication">
     <configuration name="MyProjectBackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -153,6 +166,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-project-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/my-project-frontend/package.json" />
       <command value="run" />
@@ -166,6 +195,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="JUnit.MyProjectBackendApplicationTests" />
       </list>
     </recent_temporary>
@@ -211,7 +241,11 @@
       <workItem from="1711643812703" duration="159000" />
       <workItem from="1711698243930" duration="12796000" />
       <workItem from="1711720618661" duration="80000" />
-      <workItem from="1711761828570" duration="23669000" />
+      <workItem from="1711761828570" duration="24100000" />
+      <workItem from="1711860848767" duration="6530000" />
+      <workItem from="1711867417681" duration="15191000" />
+      <workItem from="1711929854707" duration="11958000" />
+      <workItem from="1711960299811" duration="2121000" />
     </task>
     <task id="LOCAL-00001" summary="初始化和Security基本配置">
       <option name="closed" value="true" />
@@ -285,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711793328953</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完结1.0">
+      <option name="closed" value="true" />
+      <created>1711810418728</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711810418728</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +342,7 @@
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
     <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="nginx.conf" />
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
     <option featureType="dependencySupport" implementationName="executable:docker" />
@@ -340,6 +383,11 @@
     <MESSAGE value="准备增加其他功能" />
     <MESSAGE value="添加了live2D小人，完善其他功能 1.0" />
     <MESSAGE value="增加了失物招领页面，和实用工具跳转链接" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了失物招领页面，和实用工具跳转链接" />
+    <MESSAGE value="完结1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="完结1.0" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,0 +1,51 @@
+#生产环境配置
+server:
+  port: 8080
+spring:
+  mail:
+    host: smtp.163.com
+    username: 13239165658@163.com
+    password: TOLOSTOORXIMOPWD
+    port: 465
+    protocol: smtps
+
+  rabbitmq:
+    username: admin
+    password: admin
+    host: 47.242.63.83:5672
+    virtual-host: /
+  security:
+    jwt:
+      key: 'abcdefghijklmn'
+      expire: 72
+      limit:
+        base: 10
+        upgrade: 300
+        frequency: 30
+    filter:
+      order: -100
+  datasource:
+    url: jdbc:mysql://47.242.63.83:3306/myproject
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  web:
+    verify:
+      mail-limit: 60
+    flow:
+      period: 3
+      limit: 50
+      block: 30
+    cors:
+      origin: '*'
+      credentials: false
+      methods: '*'
+  minio:
+    endpoint: 'http://47.242.63.83:9090'
+    username: 'minio'
+    password: 'password'
+  weather:
+    key: 6c6eba76572b4d1bb89f4ee2a258e6bc
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
