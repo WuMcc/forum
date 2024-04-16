@@ -1,6 +1,6 @@
 #生产环境配置
 server:
-  port: 80
+  port: 8080
 spring:
   mail:
     host: smtp.163.com
@@ -22,7 +22,7 @@ spring:
     filter:
       order: -100
   datasource:
-    url: jdbc:mysql://localhost:13306/myproject
+    url: jdbc:mysql://47.242.63.83:3306/myproject
     username: root
     password: mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -41,7 +41,7 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   minio:
-    endpoint: 'http://localhost:9000'
+    endpoint: 'http://47.242.63.83:9000'
     username: 'minio'
     password: 'password'
   weather:

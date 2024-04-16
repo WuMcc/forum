@@ -6,8 +6,8 @@
     </div>
     <div class="welcome-title">
       <div style="font-size: 30px;font-weight: bold">欢迎来到校园论坛</div>
-      <div style="margin-top: 10px">在这里你可以发布日常闲谈，经验分享，恋爱官宣......</div>
-      <div style="margin-top: 5px">吃🍉一线，避⚡秘籍，匿名表白应有尽有😊</div>
+      <div style="margin-top: 10px">在这里你可以发布💬日常闲谈，经验分享，恋爱官宣......</div>
+      <div style="margin-top: 5px">吃🍉一线，避⚡秘籍，匿名表白💕应有尽有😊</div>
     </div>
     <div class="right-card">
       <router-view v-slot="{ Component }">
